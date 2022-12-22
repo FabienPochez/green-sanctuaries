@@ -4,43 +4,33 @@ import { Icon } from 'astro-icon';
 const items = [
 	[
 		{
-			title: 'Astro + Tailwind CSS Integration',
+			title: 'Transparence',
 			description:
 				'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
 			icon: 'tabler:brand-tailwind',
 		},
 		{
-			title: 'Ready-to-use Components',
+			title: 'Ouverture',
 			description:
 				'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
 			icon: 'tabler:components',
 		},
-		{
-			title: 'Best Practices',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-			icon: 'tabler:list-check',
-		},
+		
 	],
 	[
 		{
-			title: 'Excellent Page Speed',
+			title: 'Pragmatisme',
 			description:
 				'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
 			icon: 'tabler:rocket',
 		},
-		{
-			title: 'Search Engine Optimization (SEO)',
+        {
+			title: 'Transmission',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-			icon: 'tabler:trees',
+			icon: 'tabler:list-check',
 		},
-		{
-			title: 'Open to new ideas and contributions',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-			icon: 'tabler:bulb',
-		},
+	
 	],
 ];
 ---
@@ -48,9 +38,9 @@ const items = [
 <section class="scroll-mt-16" id="features">
 	<div class="px-4 py-16 mx-auto max-w-6xl lg:px-8 lg:py-20">
 		<div class="mb-10 md:mx-auto sm:text-center md:mb-12 max-w-3xl">
-			<p class="text-base text-primary-600 dark:text-primary-200 font-semibold tracking-wide uppercase">Features</p>
+			
 			<h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
-				What you get with <span class="whitespace-nowrap">AstroWind</span>
+				Nos valeurs</span>
 			</h2>
 			<p class="max-w-3xl mx-auto sm:text-center text-xl text-gray-600 dark:text-slate-400">
 				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa
@@ -64,8 +54,8 @@ const items = [
 						{subitems.map(({ title, description, icon }) => (
 							<div class="flex flex-row max-w-md">
 								<div class="mb-4 mr-4">
-									<div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary-500 dark:bg-primary-700">
-										{icon && <Icon name={icon} class="w-6 h-6 text-white icon-light" />}
+									<div class="flex items-center justify-center w-24 h-24 rounded-full bg-primary-400 dark:bg-primary-700">
+										{icon && <Icon name={icon} class="w-12 h-12 text-white icon-light" />}
 									</div>
 								</div>
 								<div>

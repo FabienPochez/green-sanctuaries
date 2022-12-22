@@ -27,3 +27,11 @@ hero-overlay	{
 [data-aw-toggle-menu].expanded g > path:last-child {
 	@apply rotate-45 translate-y-[-8px] translate-x-[14px];
 }
+
+a.anchor{
+	display: block;
+    position: relative;
+    top: 150px;
+    visibility: hidden;
+
+}

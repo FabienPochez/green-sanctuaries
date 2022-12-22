@@ -4,11 +4,14 @@ import { getCanonical, getHomePermalink } from '~/utils/permalinks';
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
+import About from '~/components/widgets/About.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Note from '~/components/widgets/Note.astro';
 import Partners from '~/components/widgets/Partners.astro';
 import Team from '~/components/widgets/Team.astro';
 import Map from '~/components/widgets/Map.astro';
+import Why from '~/components/widgets/Why.astro';
+import Valeurs from '~/components/widgets/Values.astro';
 import Features from '~/components/widgets/Features.astro';
 import Founders from '~/components/widgets/Founders.astro';
 import Steps from '~/components/widgets/Steps.astro';
@@ -28,8 +31,11 @@ const meta = {
 <Layout {meta}>
 	<Hero2 />
 	<Note />
-	<Partners />
+	<About />
 	<Founders />
-	<Team />
+	<Valeurs />
 	<Map />
+	<Why />
+	<Team />
+	<Partners />
 </Layout>
