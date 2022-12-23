@@ -5,46 +5,46 @@ const items = [
 	{
 		description:
 			'Être rasées au profit de monocultures d’arbres ou de plantes, catastrophiques pour la biodiversité et extrêmement fragiles (incendies, maladies).',
-		icon: 'openmoji:fire',
+		icon: 'deforestation-2',
 	},
 	{
 		description:
 			'Faire l’objet d’une exploitation forestière qui entraînerait des pertes irréparables de biodiversité.',
-		icon: 'openmoji:wood',
+		icon: 'clearing',
 	},
 	{
 		description:
 			'Faire l’objet d’exploitation de mines clandestines ou subir la menace menace d’infrastructures fossiles (oléoduc, gazoduc).',
-		icon: 'iconoir:oil-industry',
+		icon: 'oil-well',
 	},
 	{
 		description:
 			'Devenir des lieux de chasse (hors chasses traditionnelles des peuples autochtones) ou subir des braconnages.',
-		icon: 'flat-color-icons:home',
+		icon: 'poaching-2',
 	},
 
 ];
 ---
 
-<section class="relative" id="why">
+<section class="relative lg:pt-20" id="why">
 	<div class="absolute inset-0 bg-sanctuaries-light dark:bg-sanctuaries pointer-events-none mb-32" aria-hidden="true"></div>
 	<div class="relative max-w-6xl mx-auto px-4 sm:px-6">
 		<div class="py-4 pt-8 sm:py-6 lg:py-8 lg:pt-12">
 			<div class="mb-8 text-center">
 				
-				<h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
+				<h2 class="text-4xl md:text-5xl text-sanctuaries font-bold leading-tighter tracking-tighter mb-4 font-heading">
 					De quoi les protégeons nous ?
 				</h2>
 				<p class="max-w-3xl mx-auto text-center text-xl text-sanctuaries dark:text-slate-400">
 					Les menaces anthropiques sur les forêts sont nombreuses. <br> Pour n’en citer que quelques unes :
 				</p>
 			</div>
-			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 items-start my-12 dark:text-white">
+			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 items-stretch my-12 dark:text-white">
 				{
 					items.map(({ description, icon }) => (
 						<div class="relative flex flex-col items-center p-6 bg-white dark:bg-slate-900 rounded-xl shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
 							<div class="flex items-center mb-4">
-								<Icon name={icon} class="w-20 h-20 " />
+								<Icon name={icon} class="w-20 h-20 fill-sanctuaries" />
 
 								
 							</div>
@@ -56,15 +56,15 @@ const items = [
 		</div>
 	</div>
 </section>
-<section>
-	<div class="relative max-w-6xl mx-auto px-4 sm:px-6">
+<section class="lg:pb-20">
+	<div class="relative max-w-6xl mx-auto px-4 sm:px-6 ">
 		<div class="py-4 pt-0 sm:py-6 lg:py-8 lg:pt-12">
 			<div class="mb-8 text-center">
 				
-				<h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
+				<h2 class="text-4xl md:text-5xl text-sanctuaries font-bold leading-tighter tracking-tighter mb-4 font-heading">
 					Pourquoi ces forêts ?
 				</h2>
-				<p class="max-w-5xl mx-auto text-left text-xl text-gray-600 dark:text-slate-400">
+				<p class="max-w-5xl mx-auto text-left text-xl text-sanctuaries  dark:text-slate-400">
 					Ce sont des forêts préservées, elles n’ont pas connu de dégradation liées à l’activité humaine. Leur indice de biodiversité y est très élevé. Elles sont représentatives de la variété des écosystèmes forestiers dans le monde. Elles sont menacées à court ou moyen terme (ex : déforestation pour transformation en monoculture, exploitation minière ou pétrolière, braconnage.) 
 
 

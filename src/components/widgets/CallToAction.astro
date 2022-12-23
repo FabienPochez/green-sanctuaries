@@ -3,25 +3,24 @@ import { Icon } from 'astro-icon';
 ---
 
 <section class="relative">
-	<div class="max-w-6xl mx-auto px-4 sm:px-6">
-		<div class="py-12 md:py-20">
-			<div class="max-w-3xl mx-auto text-center p-6 rounded-md shadow-xl dark:shadow-none">
-				<h2 class="text-4xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
-					<span>Astro</span> + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-				</h2>
-				<p class="text-xl text-gray-600 dark:text-slate-400">
-					Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-					waste more time! :P
-				</p>
 
-				<div class="mt-6">
+	<div class="2xl:mx-auto dark:bg-gray-900 2xl:container md:px-20 px-4 md:py-12 py-9">
+		<div class="relative rounded-xl">
+			<img src="/images/cta.jpg" alt="city view" class="w-full h-full rounded-xl  object-center object-fill absolute sm:block hidden" />
+			<img src="/images/cta-m.jpg" alt="city view" class="w-full h-full rounded-xl absolute object-center object-fill sm:hidden" />
+			<div class="text-xl relative z-20 bg-gradient-to-r from-sanctuaries to-transparent w-full h-full z-40 top-0 md:p-16 p-6 flex flex-col justify-between rounded-xl ">
+				<div>
+					<h1 class="md:text-5xl text-3xl font-bold md:leading-10 leading-9 text-white sm:w-auto w-64">Act Before It’s Too Late!</h1>
+					<p class="text-lg leading-6 text-white xl:w-5/12 lg:w-8/12 md:w-10/12  2xl:pr-12 mt-4">A good idiom for kids is "It's raining cats and dogs." Kids know what both cats and dogs are from an early age.</p>
+				</div>
+				<div class="md:mt-12 mt-20">
 					<a
-						class="btn btn-primary mb-4 sm:mb-0"
-						href="https://github.com/onwidget/astrowind"
+						class="btn btn-sanctuaries mb-4 sm:mb-0"
+						href="mailto:info@greensanctuaries.com"
 						target="_blank"
 						rel="noopener"
 					>
-						<Icon name="tabler:download" class="w-5 h-5 mr-1 -ml-1.5" /> Get template
+						<Icon name="tabler:mail" class="w-5 h-5 mr-1 -ml-1.5" /> Contact us
 					</a>
 				</div>
 			</div>
