@@ -12,7 +12,7 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: colors.pink,
-				secondary: colors.blue,
+				secondary: colors.pink,
 				'sanctuaries': {
 					lighter: '#dde0dd',
 					light: '#bec3bc',
@@ -41,32 +41,7 @@ module.exports = {
 		prefix: "",
 		darkTheme: "dark",
 	  },
-	  daisyui: {
-		themes: [
-		  {
-			mytheme: {
-			
-   "primary": "#ffc8c8",
-			
-   "secondary": "#374236",
-			
-   "accent": "#37CDBE",
-			
-   "neutral": "#bec3bc",
-			
-   "base-100": "#dde0dd",
-			
-   "info": "#00B4EC",
-			
-   "success": "#2fac66",
-			
-   "warning": "#fcea10",
-			
-   "error": "#ea592b",
-			},
-		  },
-		],
-	  },  
+	   
 
 	
 };
