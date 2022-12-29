@@ -4,6 +4,9 @@
 @tailwind daisyui;
 
 
+.btn:hover{
+	color: #dde0dd;
+}
 hero-overlay	{
 	color:#a6faff
 }

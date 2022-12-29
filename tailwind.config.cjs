@@ -9,9 +9,12 @@ module.exports = {
 			'50': '50vh',
 			'80': '80vh',
 		  },
+		  maxWidth: {
+			'1/2': '50%',
+		  },
 		extend: {
 			colors: {
-				primary: colors.pink,
+				primary: colors.sanctuaries,
 				secondary: colors.pink,
 				'sanctuaries': {
 					lighter: '#dde0dd',
