@@ -32,19 +32,19 @@ const items = [
 		<div class="py-4 pt-8 sm:py-6 lg:py-8 lg:pt-12">
 			<div class="mb-8 text-center">
 				
-				<h2 class="text-4xl md:text-5xl text-sanctuaries font-bold leading-tighter tracking-tighter mb-4 font-heading">
+				<h2 class="text-4xl md:text-5xl text-sanctuaries dark:text-sanctuaries-lighter font-bold leading-tighter tracking-tighter mb-4 font-heading">
 					De quoi les protégeons nous ?
 				</h2>
-				<p class="max-w-3xl mx-auto text-center text-xl text-sanctuaries dark:text-slate-400">
+				<p class="max-w-3xl mx-auto text-center text-xl text-sanctuaries dark:text-sanctuaries-light">
 					Les menaces anthropiques sur les forêts sont nombreuses. <br> Pour n’en citer que quelques unes :
 				</p>
 			</div>
 			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 items-stretch my-12 dark:text-white">
 				{
 					items.map(({ description, icon }) => (
-						<div class="relative flex flex-col items-center p-6 bg-white dark:bg-slate-900 rounded-xl shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
+						<div class="relative flex flex-col items-center p-6 bg-white dark:bg-zinc-800 rounded-xl shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
 							<div class="flex items-center mb-4">
-								<Icon name={icon} class="w-20 h-20 fill-sanctuaries" />
+								<Icon name={icon} class="w-20 h-20 fill-sanctuaries-medium" />
 
 								
 							</div>
@@ -61,10 +61,10 @@ const items = [
 		<div class="py-4 pt-0 sm:py-6 lg:py-8 lg:pt-12">
 			<div class="mb-8 text-center">
 				
-				<h2 class="text-4xl md:text-5xl text-sanctuaries font-bold leading-tighter tracking-tighter mb-4 font-heading">
+				<h2 class="text-4xl md:text-5xl text-sanctuaries dark:text-sanctuaries-light font-bold leading-tighter tracking-tighter mb-4 font-heading">
 					Pourquoi ces forêts ?
 				</h2>
-				<p class="max-w-5xl mx-auto text-left text-xl text-sanctuaries  dark:text-slate-400">
+				<p class="max-w-5xl mx-auto text-left text-xl text-sanctuaries  dark:text-sanctuaries-light">
 					Ce sont des forêts préservées, elles n’ont pas connu de dégradation liées à l’activité humaine. Leur indice de biodiversité y est très élevé. Elles sont représentatives de la variété des écosystèmes forestiers dans le monde et sont menacées à court ou moyen terme.
 
 
