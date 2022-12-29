@@ -9,9 +9,7 @@ module.exports = {
 			'50': '50vh',
 			'80': '80vh',
 		  },
-		  maxWidth: {
-			'1/2': '50%',
-		  },
+		 
 		extend: {
 			colors: {
 				primary: colors.sanctuaries,
@@ -34,16 +32,7 @@ module.exports = {
 	plugins: [require("daisyui")],
 	darkMode: 'class',
 	 // daisyUI config (optional)
-	 daisyui: {
-		styled: true,
-		themes: true,
-		base: true,
-		utils: true,
-		logs: true,
-		rtl: false,
-		prefix: "",
-		darkTheme: "dark",
-	  },
+	
 	   
 
 	
