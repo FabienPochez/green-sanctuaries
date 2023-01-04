@@ -1,0 +1,83 @@
+---
+import { Icon } from 'astro-icon';
+
+const items = [
+	[
+		{
+			title: 'Transparence',
+			description:
+				'Les vrais puits de carbone, de loin, ce sont les vieux arbres. Une récente étude publiée dans la revue "Frontiers in Forests and Global Change" montre que dans les écosystèmes forestiers de l"Oregon et Washington, les arbres de plus de 50 cm de diamètre représentent seulement 3 % des arbres mais stockent 42 % du carbone ! A contrario les jeunes arbres n’ont pas d’effet significatif sur la captation de carbone avant des décennies… Or c’est aujourd’hui que nous devons limiter le réchauffement climatique !',
+			icon: 'values-transparency',
+		},
+		{
+			title: 'Ouverture',
+			description:
+				'De la même manière, pour le cycle de l’eau, il est crucial de laisser les grands arbres jouer leur rôle de « geysers verts* » qui alimentent les rivières volantes*, pourvoyeuses de pluies bénéfiques sur des milliers de kilomètres alentour. Les forêts plantées auront le potentiel de les relayer dans plusieurs dizaines, voire plusieurs centaines d’années.',
+			icon: 'values-openness',
+		},
+		
+	],
+	[
+		{
+			title: 'Pragmatisme',
+			description:
+				'Préserver une forêt, c’est aussi sauver les pollinisateurs cruciaux pour l’agriculture : abeilles domestiques ou sauvages, mais aussi fourmis, papillons, coccinelles, scarabées, mouches, lézards et geckos, colibris et chauve-souris… Plus de 70% des cultures alimentaires mondiales tirent profit de la pollinisation animale, tout comme 90% des plantes sauvages à fleurs. Il en va de la sécurité alimentaire mondiale.',
+			icon: 'values-practical',
+		},
+		{
+			title: 'Pragmatisme',
+			description:
+				'L extraordinaire biodiversité des forêts tropicales nous a fourni 60 à 80% des molécules aujourd hui utilisées dans les antibiotiques et les traitements anticancéreux. Comme la pervenche de Madagascar, à l origine de médicaments pour lutter contre la leucémie infantile. Les forêts contiennent sans doute les médicaments de demain.',
+			icon: 'values-practical',
+		},
+        {
+			title: 'Transmission',
+			description:
+				'Enfin, une partie de cette biodiversité, dont il nous reste encore beaucoup à découvrir, disparaîtra à jamais si nous continuons de grignoter les derniers sanctuaires de forêts tropicales. Des milliers d espèces ont déjà disparu avant même d être répertoriées, et 69% des vertébrés sauvages ont disparu depuis 1970. ',
+			icon: 'values-family',
+		},
+	
+	],
+];
+---
+
+<section class="scroll-mt-16 dark:bg-zinc-800" id="features">
+	<div class="px-4 py-16 mx-auto max-w-6xl lg:px-8 lg:py-20">
+		<div class="py-4 pt-0 sm:py-6 lg:py-8 lg:pt-12">
+			<div class="mb-8 text-center">
+				
+				<h2 class="text-4xl md:text-5xl text-sanctuaries dark:text-sanctuaries-light font-bold leading-tighter tracking-tighter mb-4 font-heading">
+					On ne planterait pas des arbres, plutôt ?
+				</h2>
+				<p class="max-w-5xl mx-auto text-left text-xl text-sanctuaries  dark:text-sanctuaries-light">
+					C’est vrai, planter des arbres, tout le monde adore ça, et on le comprend : au-delà de la très belle symbolique, on se dit que mettre une jeune pousse en terre, c’est Agir avec un grand A. 
+Il y a un avant et un après, c’est tangible. Tandis qu’une forêt en pleine santé à l’autre bout du monde qui…reste une forêt en pleine santé à l’autre bout du monde, ce n'est pas très spectaculaire, du moins en apparence.<br><br>
+
+La plantation d’arbres est donc devenue l’Alpha et l’Omega de la communication environnementale de nombre d’entreprises, au risque de nous faire perdre de vue l’essentiel : protéger nos forêts naturelles telles qu’elles sont est la première des urgences, et la plus efficace des actions.<br><br>
+ 
+Les raisons pour lesquelles préserver un hectare de forêt primaire est plus important que planter une, deux ou même 10 fois le nombre d’arbres qu'il peut contenir, sont nombreuses. 
+Retenons simplement celles-ci :
+
+
+				</p>
+			</div>
+		</div>
+		<div class="grid mx-auto space-y-6 md:grid-cols-2 md:space-y-0">
+			{
+				items.map((subitems) => (
+					<div class="space-y-8 sm:px-8">
+						{subitems.map(({  description }) => (
+							<div class="flex flex-row max-w-md">
+								
+								<div>
+								
+									<p class="text-gray-600 dark:text-slate-400">{description}</p>
+								</div>
+							</div>
+						))}
+					</div>
+				))
+			}
+		</div>
+	</div>
+</section>

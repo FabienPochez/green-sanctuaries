@@ -1,5 +1,6 @@
 ---
 import { Icon } from 'astro-icon';
+import { lax } from 'lax.js';
 import Logo from '~/components/atoms/Logo.astro';
 import ToggleTheme from '~/components/core/ToggleTheme.astro';
 import ToggleMenu from '~/components/core/ToggleMenu.astro';
@@ -57,6 +58,22 @@ import { getHomePermalink, getBlogPermalink, getPermalink, getRelativeLink } fro
 					
 				</div>
 			</div>
+
+		
 		</nav>
 	</div>
+<!-- JS -->
+<script is:inline src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+<script is:inline>
+
+window.addEventListener("load", () => {
+	lax.init()
+
+	// Add a driver that we use to control our animations
+	lax.addDriver('scrollY', function () {
+		return window.scrollY
+	})
+})
+</script>
+
 </header>

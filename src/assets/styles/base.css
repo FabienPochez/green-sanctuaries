@@ -31,10 +31,10 @@ hero-overlay	{
 	@apply rotate-45 translate-y-[-8px] translate-x-[14px];
 }
 
-a.anchor{
+anchor{
 	display: block;
     position: relative;
-    top: 150px;
+    top: 250px;
     visibility: hidden;
 
 }
