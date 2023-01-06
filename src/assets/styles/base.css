@@ -4,6 +4,12 @@
 @tailwind daisyui;
 
 
+
+
+html { 
+	scroll-behavior: smooth; 
+  }
+
 .btn:hover{
 	color: #dde0dd
 }
