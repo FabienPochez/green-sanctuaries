@@ -79,7 +79,7 @@ import { getHomePermalink, getBlogPermalink, getPermalink, getRelativeLink } fro
 						target="_blank"
 						rel="noopener"
 					>
-						<Icon name="tabler:gift" class="w-5 h-5 mr-1 -ml-1.5" />Faire un don
+						Faire un don
 					</a>
 			</div>
 		</div>
@@ -124,7 +124,18 @@ window.addEventListener("load", () => {
   // 2 
   const href = $(this).attr("href");
   // 3 
-  $("html, body").animate({ scrollTop: $(href).offset().top - 200 }, 200);
+  $("html, body").animate({ scrollTop: $(href).offset().top }, 200);
 });
+</script>
+
+<link rel="alternate" hreflang="fr" href="https://green-sanctuaries.org">
+<link rel="alternate" hreflang="en" href="https://en.green-sanctuaries.org">
+
+    
+<script is:inline type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script is:inline>
+    Weglot.initialize({
+        api_key: 'wg_0c2341b5f1771e8c6951e9ba6b7e4f243'
+    });
 </script>
 </header>
