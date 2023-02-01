@@ -1,19 +1,19 @@
 export const SITE = {
 	name: 'Green Sanctuaries',
 
-	origin: 'https://midnightclub.com',
+	origin: 'https://green-sanctuaries.org',
 	basePathname: '/',
 	trailingSlash: false,
 
 	title: 'Green Sanctuaries — Protecting forests to save the world',
-	description: 'Protecting forests to save the world',
+	description: 'Green Sanctuaries protège les forêts les plus riches en biodiversité du globe en agissant directement sur le terrain pour les générations futures. Rejoignez le mouvement !',
 
 	googleAnalyticsId: false, // or "G-XXXXXXXXXX",
 	googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
 };
 
 export const BLOG = {
-	disabled: false,
+	disabled: true,
 	postsPerPage: 4,
 
 	blog: {
